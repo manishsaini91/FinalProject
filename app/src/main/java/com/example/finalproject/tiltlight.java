@@ -27,7 +27,6 @@ public class tiltlight extends AppCompatActivity implements SensorEventListener 
     Sensor s;
     CameraManager cm;
     private  boolean torch=false;
-    TextView t1;
     Button b1;
 
 
@@ -36,7 +35,6 @@ public class tiltlight extends AppCompatActivity implements SensorEventListener 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tiltlight);
-        TextView t1=(TextView)findViewById(R.id.textView11);
         mp=MediaPlayer.create(this,R.raw.k);
         b1=(Button)findViewById(R.id.button32);
         i1=(ImageView)findViewById(R.id.tilt);

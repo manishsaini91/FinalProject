@@ -25,8 +25,7 @@ public class music extends AppCompatActivity {
         t1=(TextView)findViewById(R.id.music);
         m1=MediaPlayer.create(this,R.raw.k);
 
-        String s1="Welcome to our app :  ";
-        t1.setText(s1);
+
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

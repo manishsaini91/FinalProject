@@ -37,27 +37,23 @@ public class Otpfiller extends AppCompatActivity {
         setContentView(R.layout.activity_otpfiller);
         phone=getIntent().getStringExtra("mobile").toString();
         e1=(EditText)findViewById(R.id.editText2);
-        t1=(TextView)findViewById(R.id.textView6);
         b1=(Button)findViewById(R.id.button4);
         firebaseAuth=FirebaseAuth.getInstance();
         genotp();
-        b1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(e1.getText().toString().isEmpty()){
-                    Toast.makeText(Otpfiller.this, "Please enter OTP", Toast.LENGTH_SHORT).show();
+        b1.setOnClickListener(v -> {
+            if(e1.getText().toString().isEmpty()){
+                Toast.makeText(Otpfiller.this, "Please enter OTP", Toast.LENGTH_SHORT).show();
+            }
+            else{
+                if(e1.getText().toString().length()!=6){
+                    Toast.makeText(Otpfiller.this, "Invalid OTP", Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    if(e1.getText().toString().length()!=6){
-                        Toast.makeText(Otpfiller.this, "Invalid OTP", Toast.LENGTH_SHORT).show();
-                    }
-                    else{
-                        PhoneAuthCredential credential = PhoneAuthProvider.getCredential(otp,e1.getText().toString());
-                        signInWithPhoneauthcredential(credential);
-                    }
+                    PhoneAuthCredential credential = PhoneAuthProvider.getCredential(otp,e1.getText().toString());
+                    signInWithPhoneauthcredential(credential);
                 }
-
             }
+
         });
 
 

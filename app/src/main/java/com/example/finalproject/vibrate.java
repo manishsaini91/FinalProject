@@ -28,9 +28,7 @@ public class vibrate extends AppCompatActivity {
                     v1.vibrate(10000);
                 }
                 else
-                {
                     v1.vibrate(10000);
-                }
             }
         });
         b2.setOnClickListener(new View.OnClickListener() {

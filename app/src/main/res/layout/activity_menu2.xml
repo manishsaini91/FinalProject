@@ -1,89 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:gravity="center_horizontal"
     tools:context=".Menu" >
 
     <Button
         android:id="@+id/button10"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="3dp"
-        android:layout_marginLeft="3dp"
-        android:layout_marginTop="136dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginRight="0dp"
+        android:layout_height="80dp"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:background="@drawable/corner_for_app"
+        android:layout_marginVertical="15dp"
         android:text="Light Sensor Music" />
 
     <Button
         android:id="@+id/button11"
-        android:layout_width="406dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="1dp"
-        android:layout_marginLeft="1dp"
-        android:layout_marginTop="246dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginRight="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:background="@drawable/corner_for_app"
+        android:layout_marginVertical="15dp"
         android:text="Text to speak" />
 
     <Button
         android:id="@+id/button12"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="329dp"
+        android:layout_height="80dp"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:background="@drawable/corner_for_app"
+        android:layout_marginVertical="15dp"
         android:text="Tilt light" />
 
     <Button
         android:id="@+id/button13"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginBottom="220dp"
+        android:layout_height="80dp"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:background="@drawable/corner_for_app"
+        android:layout_marginVertical="15dp"
         android:text="vibration " />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button15"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="15dp"
+            android:background="@drawable/corner2"
+            android:text="App details" />
 
     <Button
         android:id="@+id/button14"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
+        android:padding="15dp"
+        android:background="@drawable/corner_for_logout"
+        android:textColor="@color/white"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="37dp"
-        android:layout_marginLeft="37dp"
-        android:layout_marginBottom="88dp"
+        android:layout_margin="10dp"
         android:text="Log out" />
 
-    <Button
-        android:id="@+id/button15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="55dp"
-        android:layout_marginRight="55dp"
-        android:layout_marginBottom="82dp"
-        android:text="App details" />
 
-</RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
